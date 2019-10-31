@@ -340,44 +340,44 @@ dashboards:
   default:
     Kubernetes-Capacity:
       file: dashboards/6912.json
-      gnetId: 6912
-      revision: 1
-      datasource: Prometheus
+      # gnetId: 6912
+      # revision: 1
+      # datasource: Prometheus
     Kubernetes-Cluster-Health:
       file: dashboards/5312.json
-      gnetId: 5312
-      revision: 1
-      datasource: Prometheus
+      # gnetId: 5312
+      # revision: 1
+      # datasource: Prometheus
     Kubernetes-Deployment:
       file: dashboards/5303.json
-      gnetId: 5303
-      revision: 1
-      datasource: Prometheus
+      # gnetId: 5303
+      # revision: 1
+      # datasource: Prometheus
     Kubernetes-Pods:
       file: dashboards/7670.json
-      gnetId: 7670
-      revision: 1
-      datasource: Prometheus
+      # gnetId: 7670
+      # revision: 1
+      # datasource: Prometheus
     Kubernetes-Nodes:
       file: dashboards/6915.json
-      gnetId: 6915
-      revision: 1
-      datasource: Prometheus
+      # gnetId: 6915
+      # revision: 1
+      # datasource: Prometheus
     Kubernetes-Resource-Requests:
       file: dashboards/5321.json
-      gnetId: 5321
-      revision: 1
-      datasource: Prometheus
+      # gnetId: 5321
+      # revision: 1
+      # datasource: Prometheus
     Kubernetes-Overview:
       file: dashboards/6918.json
-      gnetId: 6918
-      revision: 1
-      datasource: Prometheus
+      # gnetId: 6918
+      # revision: 1
+      # datasource: Prometheus
     Kubernetes-Persistence-Volumes:
       file: dashboards/6739.json
-      gnetId: 6739
-      revision: 1
-      datasource: Prometheus
+      # gnetId: 6739
+      # revision: 1
+      # datasource: Prometheus
 
 ## Reference to external ConfigMap per provider. Use provider name as key and ConfiMap name as value.
 ## A provider dashboards must be defined either by external ConfigMaps or in values.yaml, not in both.
