@@ -146,20 +146,20 @@ dashboardProviders:
       orgId: 1
       folder: ''
       type: file
-      disableDeletion: false
+      disableDeletion: true
       updateIntervalSeconds: 3 #how often Grafana will scan for changed dashboards
       editable: true
       options:
         path: /var/lib/grafana/dashboards/default
-    - name: 'configmap'
-      orgId: 1
-      folder: ''
-      type: file
-      disableDeletion: false
-      updateIntervalSeconds: 3 #how often Grafana will scan for changed dashboards
-      editable: true
-      options:
-        path: /var/lib/grafana/dashboards/configmap
+    # - name: 'configmap'
+    #   orgId: 1
+    #   folder: ''
+    #   type: file
+    #   disableDeletion: false
+    #   updateIntervalSeconds: 3 #how often Grafana will scan for changed dashboards
+    #   editable: true
+    #   options:
+    #     path: /var/lib/grafana/dashboards/configmap
 
 ## Configure grafana dashboard to import
 ## NOTE: To use dashboards you must also enable/configure dashboardProviders
@@ -169,9 +169,9 @@ dashboards:
   default:
     Kubernetes-Capacity:
       file: dashboards/6912.json
-      gnetId: 6912
-      revision: 1
-      datasource: DS_PROMETHEUS
+      # gnetId: 6912
+      # revision: 1
+      # datasource: DS_PROMETHEUS
     Kubernetes-Cluster-Health:
       gnetId: 5312
       revision: 1
