@@ -302,7 +302,7 @@ notifiers: {}
 ##
 ## `path` must be /var/lib/grafana/dashboards/<provider_name>
 ##
-dashboardProviders: 
+dashboardProviders:
  dashboardproviders.yaml:
    apiVersion: 1
    providers:
@@ -343,11 +343,11 @@ dashboards:
       gnetId: 6912
       revision: 1
       datasource: https://test-prometheus.fuchicorp.com
-    # Kubernetes-Cluster-Health:
-    #   file: dashboards/5312.json
-    #   gnetId: 5312
-    #   revision: 1
-    #   datasource: DS_PROMETHEUS
+    Kubernetes-Cluster-Health:
+      file: dashboards/5312.json
+      gnetId: 5312
+      revision: 1
+      datasource: https://test-prometheus.fuchicorp.com
     # Kubernetes-Deployment:
     #   file: dashboards/5303.json
     #   gnetId: 5303
