@@ -204,8 +204,8 @@ dashboards:
 #  local-dashboard:
 #    url: https://example.com/repository/test.json
 
-# dashboardsConfigMaps:
-#   configmap: "resource-limit-dashboards"
+dashboardsConfigMaps:
+  configmap: "resource-limit-dashboards"
 
 ## Grafana's primary configuration
 ## NOTE: values in map will be converted to ini format
