@@ -347,37 +347,37 @@ dashboards:
       file: dashboards/5312.json
       gnetId: 5312
       revision: 1
-      datasource: https://test-prometheus.fuchicorp.com
+      datasource: DS_PROMETHEUS
     Kubernetes-Deployment:
       file: dashboards/5303.json
       gnetId: 5303
       revision: 1
-      datasource: https://test-prometheus.fuchicorp.com
+      datasource: DS_PROMETHEUS
     Kubernetes-Pods:
       file: dashboards/7670.json
       gnetId: 7670
       revision: 1
-      datasource: https://test-prometheus.fuchicorp.com
+      datasource: DS_PROMETHEUS
     Kubernetes-Nodes:
       file: dashboards/6915.json
       gnetId: 6915
       revision: 1
-      datasource: https://test-prometheus.fuchicorp.com
+      datasource: DS_PROMETHEUS
     Kubernetes-Resource-Requests:
       file: dashboards/5321.json
       gnetId: 5321
       revision: 1
-      datasource: https://test-prometheus.fuchicorp.com
+      datasource: DS_PROMETHEUS
     Kubernetes-Overview:
       file: dashboards/6918.json
       gnetId: 6918
       revision: 1
-      datasource: https://test-prometheus.fuchicorp.com
+      datasource: DS_PROMETHEUS
     Kubernetes-Persistence-Volumes:
       file: dashboards/6739.json
       gnetId: 6739
       revision: 1
-      datasource: https://test-prometheus.fuchicorp.com
+      datasource: DS_PROMETHEUS
 
 ## Reference to external ConfigMap per provider. Use provider name as key and ConfiMap name as value.
 ## A provider dashboards must be defined either by external ConfigMaps or in values.yaml, not in both.
