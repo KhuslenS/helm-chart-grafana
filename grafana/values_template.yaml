@@ -168,10 +168,10 @@ dashboardProviders:
 dashboards:
   default:
     Kubernetes-Capacity:
-      file: dashboards/6912.json
-      # gnetId: 6912
-      # revision: 1
-      # datasource: DS_PROMETHEUS
+      file: ${dashboards/6912.json}
+      gnetId: 6912
+      revision: 1
+      datasource: DS_PROMETHEUS
     Kubernetes-Cluster-Health:
       gnetId: 5312
       revision: 1
