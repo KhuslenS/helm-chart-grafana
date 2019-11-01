@@ -220,7 +220,7 @@ adminUser: admin
 adminPassword: strongpassword
 
 # Use an existing secret for the admin user.
-# admin:
+admin:
 #   existingSecret: ""
 #   userKey: admin-user
 #   passwordKey: admin-password
