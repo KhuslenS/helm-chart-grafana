@@ -217,7 +217,7 @@ initChownData:
 
 # Administrator credentials when not using an existing secret (see below)
 adminUser: admin
-# adminPassword: strongpassword
+adminPassword: strongpassword
 
 # Use an existing secret for the admin user.
 admin:
@@ -275,7 +275,7 @@ datasources:
    datasources:
    - name: Prometheus
      type: prometheus
-     url: https://test-prometheus.fuchicorp.com
+     url: ${datasource_dns_endpoint}
      access: proxy
      isDefault: true
 
@@ -337,6 +337,11 @@ dashboards:
   #   local-dashboard-base64:
   #     url: https://example.com/repository/test-b64.json
   #     b64content: true
+
+
+
+# # # #Each time when you add new dashboard as a Json, put under dashboards and specify like below. # # # #
+
   default:
     Kubernetes-Capacity:
       file: dashboards/6912.json
