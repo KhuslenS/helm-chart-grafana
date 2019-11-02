@@ -6,9 +6,9 @@ variable "dns_endpoint_grafana" {
   type = "map"
 
   default = {
-    test = "test.grafana.fuchicorp.com"
-    dev  = "dev.grafana.fuchicorp.com"
-    qa   = "qa.grafana.fuchicorp.com"
+    test = "test-grafana.fuchicorp.com"
+    dev  = "dev-grafana.fuchicorp.com"
+    qa   = "qa-grafana.fuchicorp.com"
     prod = "grafana.fuchicorp.com"
   }
 }
