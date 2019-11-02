@@ -275,7 +275,7 @@ datasources:
    datasources:
    - name: Prometheus
      type: prometheus
-     url: https://test-prometheus.fuchicorp.com
+     url: ${datasource_dns_endpoint}
      access: proxy
      isDefault: true
 
