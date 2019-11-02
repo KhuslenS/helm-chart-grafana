@@ -7,7 +7,7 @@ data "template_file" "template_values" {
 }
 
 resource "local_file" "grafana_values_local_file" {
-  content  = "${trimspace(data.template_file.grafana_values.rendered)}"
+  content  = "${trimspace(data.template_file.template_values.rendered)}"
   filename = "./grafana/.cache/values.yaml"
 }
 
@@ -18,6 +18,6 @@ resource "helm_release" "grafana" {
   chart     = "./grafana"
   version   = "${var.version}"
   values = [
-    "${data.template_file.grafana_values.rendered}"
+    "${data.template_file.template_values.rendered}"
   ]
 }
