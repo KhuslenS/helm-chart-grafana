@@ -1,5 +1,5 @@
 variable "deployment_environment" {
-  default = "test"
+  default = "dev"
 }
 
 variable "dns_endpoint_grafana" {
