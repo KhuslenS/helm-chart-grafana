@@ -1,7 +1,8 @@
 data "template_file" "template_values" {
   template = "${file("./grafana/template_values.yaml")}"
   vars = {
-    deployment_endpoint = "${lookup(var.dns_endpoint_grafana, "${var.deployment_environment}")}"
+    deployment_endpoint     = "${lookup(var.dns_endpoint_grafana, "${var.deployment_environment}")}"
+    datasource_dns_endpoint = "${var.datasource_dns_endpoint}"
     # deployment_image = "${var.deployment_image}"
   }
 }
