@@ -18,7 +18,7 @@ variable "version" {
 ########### Put datasource or Prometheus endpoint as below ##############
 
 variable "datasource_dns_endpoint" {
-  default = "my-headless-service.kube-system.svc.cluster.local"
+  default = "http://my-headless-service.kube-system.svc.cluster.local"
 }
 
 variable "name" {
