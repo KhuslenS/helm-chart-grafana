@@ -6,7 +6,7 @@ variable "dns_endpoint_grafana" {
   type = "map"
 
   default = {
-    kube-system = "grafana.fuchicorp.com"
+    kube-system = "test-grafana.fuchicorp.com"
     dev         = "dev-grafana.fuchicorp.com"
     qa          = "qa-grafana.fuchicorp.com"
   }
