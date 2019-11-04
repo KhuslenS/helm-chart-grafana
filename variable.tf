@@ -19,7 +19,7 @@ variable "version" {
 ########### Put datasource or Prometheus endpoint as below ##############
 
 variable "datasource_dns_endpoint" {
-  default = "https://test-prometheus.fuchicorp.com"
+  default = "10.16.1.5:8082"
 }
 
 variable "name" {
