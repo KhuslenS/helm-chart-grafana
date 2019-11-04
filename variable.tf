@@ -9,6 +9,7 @@ variable "dns_endpoint_grafana" {
     test = "test-grafana.fuchicorp.com"
     dev  = "dev-grafana.fuchicorp.com"
     qa   = "qa-grafana.fuchicorp.com"
+    prod = "grafana.fuchicorp.com"
   }
 }
 variable "version" {
@@ -18,7 +19,7 @@ variable "version" {
 ########### Put datasource or Prometheus endpoint as below ##############
 
 variable "datasource_dns_endpoint" {
-  default = "http://my-headless-service.kube-system.svc.cluster.local"
+  default = "https://test-prometheus.fuchicorp.com"
 }
 
 variable "name" {
