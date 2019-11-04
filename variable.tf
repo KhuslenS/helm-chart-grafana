@@ -1,15 +1,14 @@
 variable "deployment_environment" {
-  default = "dev"
+  default = "kube-system"
 }
 
 variable "dns_endpoint_grafana" {
   type = "map"
 
   default = {
-    test = "test-grafana.fuchicorp.com"
-    dev  = "dev-grafana.fuchicorp.com"
-    qa   = "qa-grafana.fuchicorp.com"
-    prod = "grafana.fuchicorp.com"
+    kube-system = "grafana.fuchicorp.com"
+    dev         = "dev-grafana.fuchicorp.com"
+    qa          = "qa-grafana.fuchicorp.com"
   }
 }
 variable "version" {
@@ -19,7 +18,7 @@ variable "version" {
 ########### Put datasource or Prometheus endpoint as below ##############
 
 variable "datasource_dns_endpoint" {
-  default = "10.16.1.5:8082"
+  default = "my-headless-service.kube-system.svc.cluster.local"
 }
 
 variable "name" {
