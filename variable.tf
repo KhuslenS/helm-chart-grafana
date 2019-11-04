@@ -19,7 +19,7 @@ variable "version" {
 ########### Put datasource or Prometheus endpoint as below ##############
 
 variable "datasource_dns_endpoint" {
-  default = " http://169.254.169.254"
+  default = " https://10.16.1.3:443"
 }
 
 variable "name" {
