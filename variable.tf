@@ -1,14 +1,14 @@
 variable "deployment_environment" {
-  default = "kube-system"
+  default = "test"
 }
 
 variable "dns_endpoint_grafana" {
   type = "map"
 
   default = {
-    kube-system = "test-grafana.fuchicorp.com"
-    dev         = "dev-grafana.fuchicorp.com"
-    qa          = "qa-grafana.fuchicorp.com"
+    test = "test-grafana.fuchicorp.com"
+    dev  = "dev-grafana.fuchicorp.com"
+    qa   = "qa-grafana.fuchicorp.com"
   }
 }
 variable "version" {
