@@ -1,5 +1,5 @@
 variable "deployment_environment" {
-  default = "dev"
+  default = "qa"
 }
 
 variable "dns_endpoint_grafana" {
@@ -19,7 +19,7 @@ variable "version" {
 ########### Put datasource or Prometheus endpoint as below ##############
 
 variable "datasource_dns_endpoint" {
-  default = " https://10.16.1.3:443"
+  default = "https://test-prometheus.fuchicorp.com"
 }
 
 variable "name" {
