@@ -1,5 +1,5 @@
 data "template_file" "template_values" {
-  template = "${file("./grafana/template_values.yaml")}"
+  template = "${file("./helm-grafana/template_values.yaml")}"
   vars = {
     deployment_endpoint     = "${lookup(var.dns_endpoint_grafana, "${var.deployment_environment}")}"
     datasource_dns_endpoint = "${var.datasource_dns_endpoint}"
@@ -9,14 +9,14 @@ data "template_file" "template_values" {
 
 resource "local_file" "grafana_values_local_file" {
   content  = "${trimspace(data.template_file.template_values.rendered)}"
-  filename = "./grafana/.cache/values.yaml"
+  filename = "./helm-grafana/.cache/values.yaml"
 }
 
 
 resource "helm_release" "grafana" {
   name      = "${var.name}"
   namespace = "${var.deployment_environment}"
-  chart     = "./grafana"
+  chart     = "./helm-grafana"
   version   = "${var.version}"
   values = [
     "${data.template_file.template_values.rendered}"
