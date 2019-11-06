@@ -275,6 +275,7 @@ datasources:
    datasources:
    - name: Prometheus
      type: prometheus
+     orgId: 1
      url: ${datasource_dns_endpoint}
      access: proxy
      isDefault: true
