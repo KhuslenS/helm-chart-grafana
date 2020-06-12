@@ -9,6 +9,6 @@ icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_t
 sources:
   - https://github.com/grafana/grafana
 maintainers:
-  - name: FuchiCorp
-    email: fuchicorpsolution@gmail.com
+  - name: khuslen
+    email: khuslen@gmail.com
 engine: gotpl
