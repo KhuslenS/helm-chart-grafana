@@ -5,13 +5,6 @@ variable "grafana-deployment_environment" {
   default = "tools"
 }
 
-variable "grafana-dns_endpoint_grafana" {
-  type = "map"
-
-  default = {
-    tools = "grafana.fuchicorp.com"
-  }
-}
 
 variable "version" {
   default = "6.0.1"
